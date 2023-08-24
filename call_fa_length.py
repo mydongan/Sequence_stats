@@ -17,8 +17,8 @@ def call_fasta_length(infile,outfile):
                 
 
 @click.command()
-@click.option('-i','--infile', help='请输入fasta文件,统计fasta的基本信息，包括长度，GC含量，gap数，ScaffoldN50，ContigN50, 输出文件为gap和contig的bed文件')
-@click.option('-o','--outfile', help='输出每条序列的长度')
+@click.option('-i','--infile', help='请输入fasta文件')
+@click.option('-o','--outfile', help='统计fasta的长度信息并输出')
 
 def main(infile,outfile):    
     call_fasta_length(infile,outfile)
